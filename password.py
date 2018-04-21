@@ -17,13 +17,7 @@ def verify(pw):
 
 def getPassword():
 	pw = "password"
-	first_time = True
 	while(not verify(pw)):
-		if not first_time:
-			choice = "something"
-			while("Continue" not in choice):
-				w = subprocess.Popen("osascript "+warning,shell=True,stdout=subprocess.PIPE)
-				choice = getStr(w)
 		p = subprocess.Popen("osascript "+prompt,shell=True,stdout=subprocess.PIPE)
 		pw = getStr(p)
 		first_time = False
