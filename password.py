@@ -20,10 +20,8 @@ def getPassword():
 	while(not verify(pw)):
 		p = subprocess.Popen("osascript "+prompt,shell=True,stdout=subprocess.PIPE)
 		pw = getStr(p)
-		first_time = False
+		print(pw)
 
 	f = open("config/password.txt","w")
 	f.write(pw)
 	f.close()
-
-
