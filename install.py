@@ -1,5 +1,5 @@
 import subprocess
-
+import password
 
 f = open("config/password.txt","w")
 pw = "password"
