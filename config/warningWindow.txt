@@ -1,0 +1,4 @@
+set theAlertText to "Incorrect! Please try again."
+set theAlertMessage to "The password you entered was incorrect. \nplease try again."
+display alert theAlertText message theAlertMessage as critical buttons {"Don't Continue", "Continue"} default button "Continue" cancel button "Don't Continue"
+--> Result: {button returned:"Continue"}
