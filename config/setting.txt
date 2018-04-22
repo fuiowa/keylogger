@@ -2,4 +2,4 @@
 notification.uiowa@gmail.com
 
 #邮件发送间隔(秒)
-5
+60

