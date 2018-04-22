@@ -6,7 +6,7 @@ prompt = "config/promptWindow.txt"
 
 def getStr(p):
 	input = str(p.communicate()[0]).strip()
-	if sys.version_info[0] == "2":
+	if str(sys.version_info[0]) == "2":
 		return input
 	return input[2:len(input)-3]
 

